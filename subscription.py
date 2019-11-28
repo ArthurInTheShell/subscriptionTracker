@@ -13,7 +13,7 @@ def data_read():
                 mdout.write('| ' + ' | '.join(row) + ' | ' + '{:04.2f}'.format(cpm) +' |\n')
                 sum += cpm
             print('Monthly subscription cost is '+ '{:04.2f}'.format(sum))
-            mdout.write('**Monthly subscription cost is '+ '{:04.2f}'.format(sum)+'**')
+            mdout.write('\n**Monthly subscription cost is '+ '{:04.2f}'.format(sum)+'**')
 
 def data_output():
     with open('subscription.csv', 'r', newline='') as csvfile:
@@ -28,7 +28,7 @@ def data_output():
                 mdout.write('| ' + ' | '.join(row) + ' | ' + '{:04.2f}'.format(cpm) +' |\n')
                 sum += cpm
             print('Monthly subscription cost is '+ '{:04.2f}'.format(sum))
-            mdout.write('**Monthly subscription cost is '+ '{:04.2f}'.format(sum)+'**')
+            mdout.write('\n**Monthly subscription cost is '+ '{:04.2f}'.format(sum)+'**')
 
 def data_entered(sub_name, total, duration):
     with open('subscription.csv', 'a', newline='') as csvfile:
